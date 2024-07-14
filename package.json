@@ -10,7 +10,7 @@
     "type": "git",
     "url": "https://github.com/Buzz93390/my-portfolio.git"
   },
-  "author": "Ethan BENSAID",
+  "author": "Buzz93390",
   "license": "MIT",
   "dependencies": {
     "vue": "^3.0.0"
