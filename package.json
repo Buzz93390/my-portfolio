@@ -1,0 +1,21 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "Mon portfolio personnel",
+  "scripts": {
+    "build": "vue-cli-service build",
+    "serve": "vue-cli-service serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Buzz93390/my-portfolio.git"
+  },
+  "author": "Ethan BENSAID",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "vue-cli-service": "^4.5.0"
+  }
+}
