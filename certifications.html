@@ -30,11 +30,32 @@
         .content {
             position: relative;
             z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             text-align: center;
+            max-width: 800px;
+            margin: auto;
         }
 
-        .links a {
-            display: block;
+        .content h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .content p {
+            font-size: 1.2em;
+        }
+
+        .certification-buttons {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .certification-link {
+            display: inline-block;
             margin: 10px;
             padding: 10px 20px;
             background-color: #ffffff;
@@ -46,30 +67,21 @@
             font-size: 1em;
         }
 
-        .links a:hover {
+        .certification-link:hover {
             background-color: #dddddd;
         }
 
         .back-button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #ffffff;
-            color: #0d47a1;
-            text-decoration: none;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-            font-size: 1em;
-            position: fixed;
+            position: absolute;
             top: 20px;
             left: 20px;
-        }
-
-        .back-button img {
-            width: 20px;
-            height: 20px;
-            vertical-align: middle;
+            background-color: white;
+            color: #0d47a1;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1em;
+            z-index: 2;
         }
     </style>
 </head>
@@ -80,16 +92,17 @@
     <!-- Contenu principal -->
     <div class="content">
         <h1>Certifications</h1>
-        <div class="links">
-            <a href="https://drive.google.com/file/d/1hX0d8jZEYyliWK72H6TP5tBiRB5fPRiF/view?usp=sharing" target="_blank">Cisco</a>
-            <a href="https://drive.google.com/file/d/1DW2yyq2rQye174Aaju3Y12lyh9MYlC6a/view?usp=sharing" target="_blank">ANSSI</a>
+        <p>Voici mes certifications...</p>
+
+        <!-- Boutons de certifications -->
+        <div class="certification-buttons">
+            <a href="images/cisco-certification.pdf" target="_blank" class="certification-link">Cisco</a>
+            <a href="images/anssi-certification.pdf" target="_blank" class="certification-link">ANSSI</a>
         </div>
     </div>
 
     <!-- Bouton de retour -->
-    <a href="index.html" class="back-button">
-        <img src="images/back-arrow.png" alt="Retour"> 
-    </a>
+    <a href="index.html" class="back-button">Retour</a>
 
     <!-- Inclure Particles.js -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
